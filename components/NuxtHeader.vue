@@ -1,15 +1,8 @@
 <template>
     <header
-        class="container sticky top-0 bg-white flex items-center justify-between w-full z-10 text-lg flex-wrap"
+        class="container sticky top-0 bg-white flex items-center justify-between w-full z-10 text-lg flex-wrap h-20"
     >
-        <a href="/">
-            <img
-                src="~/assets/gif/icons8-shopping-bag.gif"
-                alt="Logo"
-                width="50"
-                height="50"
-            />
-        </a>
+        <NuxtLink to="/">Nuxt store</NuxtLink>
 
         <button class="flex lg:hidden">
             <svg
@@ -32,19 +25,29 @@
             class="flex flex-col gap-2 w-full bg-white lg:flex lg:gap-8 lg:flex-row lg:w-auto hidden"
         >
             <li>
-                <a href="/products" class="hover:text-blue-400"> Products </a>
+                <NuxtLink to="/products" class="hover:text-blue-400">
+                    Products
+                </NuxtLink>
             </li>
             <li>
-                <a href="/services" class="hover:text-blue-400"> Services </a>
+                <NuxtLink to="/services" class="hover:text-blue-400">
+                    Services
+                </NuxtLink>
             </li>
             <li>
-                <a href="/about-us" class="hover:text-blue-400"> About us </a>
+                <NuxtLink to="/about-us" class="hover:text-blue-400">
+                    About us
+                </NuxtLink>
             </li>
             <li>
-                <a href="/reviews" class="hover:text-blue-400"> Reviews </a>
+                <NuxtLink to="/reviews" class="hover:text-blue-400">
+                    Reviews
+                </NuxtLink>
             </li>
             <li>
-                <a href="/contacts" class="hover:text-blue-400"> Contacts </a>
+                <NuxtLink to="/contacts" class="hover:text-blue-400">
+                    Contacts
+                </NuxtLink>
             </li>
         </ul>
     </header>
